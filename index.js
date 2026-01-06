@@ -34,7 +34,7 @@ const server = app.listen(PORT, () => console.log(`Server started on port ${PORT
 // Socket.io initialization
 const io = require('socket.io')(server, {
   cors: {
-    origin: "http://localhost:5173", // Frontend URL
+    origin: "https://ruet-connect-frontend.vercel.app", // Frontend URL
     methods: ["GET", "POST"]
   }
 });
